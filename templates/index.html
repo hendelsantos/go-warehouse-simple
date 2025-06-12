@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pt-br" data-theme="light">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"/>
+    
+    <script src="https://unpkg.com/htmx.org@1.9.12" integrity="sha384-ujb1lZYygJmzgSwoxRggbCHcjc0rB2XoQrxeTUQyRjrOnlCoYta87iKBWq3EsdM2" crossorigin="anonymous"></script>
+
+    <title>{{ .Title }}</title>
+</head>
+<body>
+    <main class="container">
+        <nav>
+            <ul>
+                <li><strong>Warehouse Control</strong></li>
+            </ul>
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Itens</a></li>
+                <li><a href="#" role="button">Novo Item</a></li>
+            </ul>
+        </nav>
+
+        <h1>{{ .Title }}</h1>
+        <p>Bem-vindo à sua nova aplicação de controle de estoque. Simples, rápida e profissional.</p>
+
+        <article>
+            <header>Adicionar Novo Item</header>
+            <form>
+                <label for="name">Nome do Item</label>
+                <input type="text" id="name" name="name" placeholder="Ex: Parafuso Sextavado M6" required>
+                
+                <label for="quantity">Quantidade Inicial</label>
+                <input type="number" id="quantity" name="quantity" placeholder="100" required>
+                
+                <button type="submit">Adicionar ao Estoque</button>
+            </form>
+        </article>
+    </main>
+</body>
+</html>

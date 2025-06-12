@@ -1,0 +1,9 @@
+# Arquivo do banco de dados SQLite
+inventory.db
+
+# Binários compilados do Go (se houver)
+warehouse1.2
+go-warehouse-simple
+
+# Arquivos do VSCode
+.vscode/
